@@ -3,8 +3,8 @@ import Results from "./Results";
 import React, { useState } from "react";
 import "./Dictionary.css";
 
-export default function Dictionary() {
-    let [keyword, setKeyword] = useState("sunset");
+export default function Dictionary(props) {
+    let [keyword, setKeyword] = useState(props.defaultKeyword);
     let [results, setResults] =useState(null);
     let [loaded, setLoaded] = useState(false);
 
@@ -34,11 +34,13 @@ export default function Dictionary() {
     return (
         <div className="Dictionary">
             <section>
+                <h1>What do you want to look up?</h1>
             <form onSubmit={handleSubmit}>
-                <input type="search" onChange={handleKeywordChange} />
+                <input type="search" onChange={handleKeywordChange} 
+                defaultValue={props.defaultKeyword}/>
                 </form>
                 <div className="hint">
-                    suggested words: sunset, wine, yoga
+                    suggested words: travel, wine, yoga
                 </div>
                 </section>
                 <Results results={results} />
