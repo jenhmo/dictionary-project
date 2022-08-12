@@ -8,11 +8,11 @@ export default function App() {
       <header className="App-header">
       </header>
       <main>
-        <Dictionary defaultKeyword="sunset" />
+        <Dictionary defaultKeyword="discover" />
       </main>
       <footer className="App-footer">
         <small>
-        Coded by Jen Morgan
+        Coded by <strong>Jen Morgan</strong>
         <br />
         This project is <a href='https://github.com/jenhmo/dictionary-project'>open-source</a> and hosted on <a href='https://endearing-caramel-b84297.netlify.app/'>Netlify</a>
         </small>
