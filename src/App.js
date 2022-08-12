@@ -12,7 +12,7 @@ export default function App() {
       </main>
       <footer className="App-footer">
         <small>
-        Coded by Jen Morgan
+        Coded by Jen Morgan that is <a href='https://app.netlify.com/sites/endearing-caramel-b84297/overview'>open-source</a>
         </small>
       </footer>
       </div>
